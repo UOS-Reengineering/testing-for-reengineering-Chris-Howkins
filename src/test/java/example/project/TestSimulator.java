@@ -17,8 +17,11 @@ public class TestSimulator {
 
     @Test
     public void testRun2() {
-        fail();
+        //fail();
         // remove the above line and
         // complete a test case that calls `simulator.run(scenario, ads)` and verify if the result is null.
+        Simulator simulator = new Simulator("dummy");
+        Scenario scenario = new Scenario();
+        assertEquals(null, simulator.run(scenario, new ADS("testPath")));
     }
 }
